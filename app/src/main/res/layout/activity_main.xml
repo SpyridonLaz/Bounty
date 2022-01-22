@@ -1,0 +1,147 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/treasure_map_main_"
+    android:onClick="hideKeyboard">
+
+
+
+    <ProgressBar
+        android:id="@+id/pBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+
+
+
+
+    <EditText
+        android:id="@+id/liEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/liPassword"
+        android:layout_alignStart="@+id/liPassword"
+        android:layout_centerHorizontal="true"
+        android:ems="12"
+        android:gravity="center"
+        android:hint="E-mail"
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="textEmailAddress"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/Cosmic_Latte"
+        android:textColorHighlight="@color/Prussian"
+        android:textColorHint="@color/USER_hint_light_background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/liPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/or"
+        android:layout_centerHorizontal="true"
+        android:ems="12"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:hint="@string/password"
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="textPassword"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/Cosmic_Latte"
+        android:textColorHighlight="@color/Prussian"
+        android:textColorHint="@color/USER_hint_light_background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+
+    <TextView
+
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:background="#788385fe"
+        android:text="  "
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/liRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/or"
+        android:layout_alignStart="@+id/or"
+        android:layout_alignEnd="@+id/liPassword"
+        android:background="@color/USER_button_map_background"
+        android:fontFamily="@font/scriptus"
+        android:onClick="RegisterActivity"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="@color/Cosmic_Latte"
+        android:textSize="30sp"
+        android:typeface="monospace" />
+
+
+    <Button
+        android:id="@+id/liLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/liPassword"
+        android:layout_alignTop="@+id/or"
+        android:layout_toLeftOf="@id/or"
+        android:background="@color/USER_button_map_background"
+        android:fontFamily="@font/scriptus"
+        android:onClick="loginPost"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/Cosmic_Latte"
+        android:textSize="26sp"
+        android:typeface="monospace" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/or"
+        android:layout_alignEnd="@+id/liRegister"
+        android:layout_alignBottom="@+id/or"
+        android:layout_toEndOf="@+id/or"
+        android:background="#46fdec6b"
+        android:checked="true"
+        android:singleLine="false"
+        android:text="Remember me"
+        android:textAllCaps="false"
+        android:textColor="#bc790008"
+        android:textSize="12dp" />
+    <!---
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/liLogin"
+        android:layout_alignStart="@+id/liLogin"
+        android:layout_alignBottom="@+id/liRegister"
+        android:layout_toStartOf="@+id/or"
+        android:background="#89000000"
+        android:gravity="center"
+        android:text="Status"
+        android:textColor="#00b321"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+ -->
+
+</RelativeLayout>

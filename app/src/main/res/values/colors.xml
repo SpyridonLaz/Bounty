@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary" type="color">#3F51B5</color>
+    <color name="colorPrimaryDark" type="color">#303F9F</color>
+    <color name="colorAccent" type="color">#FF4081</color>
+    <color name="apptheme_color" type="color">#ffcf6f</color>
+    <color name="holo_primary_dark" type="color">#b61212</color>
+    <color name="accent_material_light" type="color">#40ffff</color>
+
+
+
+
+
+    //MY CHOICES//
+    <color name="Golden_Olive" type="color">#aaa559</color>
+    <color name="Prussian" type="color">#0c4880</color>
+    <color name="Cosmic_Latte"  type="color">#fff8e7</color>
+    <color name="Coal_Grey" type="color">#2e2e2e</color>
+    <color name="USER_button_map_background" type="color">#53feef9f</color>
+
+    <color name="USER_hint_light_background_dark" type="color">#a7ffffff</color>
+
+
+</resources>

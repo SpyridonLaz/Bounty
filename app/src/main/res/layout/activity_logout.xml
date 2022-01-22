@@ -1,0 +1,132 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/treasure_map3rd_pale"
+    android:onClick="hideKeyboardLogout">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logname"
+        android:textSize="30sp"
+        android:typeface="monospace"
+        android:gravity="center"
+        android:textColor="#fd0000"
+        android:paddingBottom="10dp"
+        android:layout_above="@+id/logemail"
+        android:text="Name"
+        android:onClick="signatureName"
+        android:clickable="true"
+        android:layout_alignEnd="@+id/status"
+        android:layout_alignStart="@+id/logor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logage"
+        android:textSize="18sp"
+        android:typeface="monospace"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:paddingBottom="10dp"
+        android:layout_above="@+id/logemail"
+        android:layout_alignStart="@+id/logemail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-Who are you , Hunter?"
+        android:id="@+id/random_talk"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logemail"
+        android:textSize="18sp"
+        android:typeface="monospace"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:paddingBottom="10dp"
+        android:layout_above="@+id/logout"
+        android:layout_alignStart="@+id/logout" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MODIFY"
+        android:id="@+id/logmodify"
+        android:textSize="20sp"
+        android:textColor="@color/Cosmic_Latte"
+        android:typeface="monospace"
+        android:background="#700f1222"
+        android:layout_below="@+id/logout"
+        android:layout_alignEnd="@+id/random_talk"
+        android:layout_alignStart="@+id/logor" />
+    <Button
+        android:id="@+id/upAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#56aafed8"
+        android:singleLine="false"
+        android:text="Upload Avatar"
+        android:textSize="14dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logor"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:typeface="monospace"
+        android:background="#3e8385fe"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="  " />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:id="@+id/logout"
+        android:textSize="20sp"
+        android:textColor="@color/Cosmic_Latte"
+        android:typeface="monospace"
+        android:background="#700f1222"
+        android:textAllCaps="true"
+        android:layout_alignBottom="@+id/logor"
+        android:layout_toStartOf="@+id/logor"
+        android:onClick="LoginActivity" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:background="#c4000000"
+        android:textColor="#00b321"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/logout"
+        android:layout_alignEnd="@+id/logmodify"
+        android:layout_toEndOf="@+id/logor"
+        android:layout_alignTop="@+id/logout" />
+
+
+</RelativeLayout>
